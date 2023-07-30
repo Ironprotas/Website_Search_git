@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dymTKsA9J71iyltvXE+X5zvxl150v7EeTHU1pR1ywtxmU8BJjCieViav+8TQVvKBuk3QJEXSaq7ZbV85a722KA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gunte\\source\\SuperWork\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gunte\\.nuget\\packages\\serilog\\3.0.1\\serilog.3.0.1.nupkg.sha512",
+    "C:\\Users\\gunte\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
+    "C:\\Users\\gunte\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

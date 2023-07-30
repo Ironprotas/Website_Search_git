@@ -1,0 +1,35 @@
+﻿@page
+@model WebApplication2.Pages.SearchModel
+@{
+    ViewData["Title"] = "Поиск по репозиториям";
+}
+
+<div class="container mt-5">
+    <h2>Поиск по репозиториям</h2>
+    <form method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="SearchQuery" placeholder="Введите ваш запрос">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <div class="row mt-5">
+        @if (Model.SearchResults != null)
+        {
+            @foreach (var item in Model.SearchResults)
+            {
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.ProjectName</h5>
+                            <p class="card-text">Автор: @item.Author</p>
+                            <p class="card-text">Количесто звезд: @item.StargazersCount</p>
+                            <p class="card-text">Просмотры: @item.WatchersCount</p>
+                            <a href="@item.HtmlUrl" target="_blank" class="btn btn-primary">Go to GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
